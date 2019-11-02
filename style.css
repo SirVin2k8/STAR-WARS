@@ -34,7 +34,7 @@ a {
 
 a:hover{
 	box-shadow: 3px 3px 3px 3px grey;
-	transition: 1.5s;
+	transition: 3s;
 	opacity: 1;
 }
 
@@ -63,7 +63,7 @@ span{
 .main2 {
 	background-color: #fff;
 	display: flex;
-	width: 95%;
+	width: 100%;
 	max-width: 1000px;
 	margin: auto;
 	box-shadow: 0 0 10px 1px grey;
@@ -71,16 +71,14 @@ span{
 
 }
 
-.item {
+.item2 {
 	max-height:100%;
 	max-width: 100%;
-	width: calc(50% - 10px);
-	height: calc(95vw / 2 / 16 * 9);
+	width: 100%;
+	height: 100%;
 	background-color: dodgerblue;
 	margin: 5px;
 	opacity: 0.5;
-	background-position: center;
-	background-size: cover;
 }
 
 .item:hover{
@@ -113,6 +111,23 @@ span{
 
 .image-wrapper {
 	display: block;
+	z-index: 1;
+}
+
+.image{	
+
+	/*filter: blur(0) sepia(1.2);*/
+
+}
+
+.image:hover {
+	transition: opacity 0.4s ease-in;
+
+	transform: scale(2) rotate(15deg);
+
+	z-index: 10;
+
+	filter: grayscale(10);
 }
 
 .image-warpper {
